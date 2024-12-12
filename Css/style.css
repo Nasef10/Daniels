@@ -1,0 +1,457 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+:root{
+    --main-color: rgb(52, 52, 52);
+    --second-color: #f5f5f5;
+}
+
+.bg{
+    background-color: #f5f5f5;
+}
+
+::selection{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    scroll-behavior: smooth;
+}
+
+.custom-color{
+    color: var(--main-color);
+}
+
+.max-w-500{
+    max-width:600px ;
+}
+
+.animate,
+header div h1{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+}
+
+.nav-link{
+    margin-left: 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+
+header{
+   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Images/bg.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+ header h5{
+    font-size: 50px;
+    font-weight: 800;
+    font-family:"Montserrat", sans-serif;
+}
+
+.navbar{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ;
+}
+
+section{
+    margin: 50px 0;
+}
+
+.heading h2{
+        color: var(--main-color);
+        font-size:40px ;
+        font-weight:900 ;
+        font-family: "Montserrat", sans-serif;
+        position: relative;
+        display: inline-block;
+        z-index: 5;
+    }
+
+
+    .heading h2::after{
+        content: "";
+        width: 100%;
+        height: 50px;
+        background-image: url(../Images/dots.png);
+        background-repeat: repeat;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        z-index: -5;
+    }
+
+
+/* home-section  */
+
+.home-content i{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all 0.6s;
+    background-color:var(--main-color) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* about  */
+
+.img-about{
+    position: relative;
+    z-index: 2;
+}
+
+.img-about::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    background-image: url(../Images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.about-info h3{
+    color: rgb(52, 52, 52);
+    font-size:30px ;
+    font-weight:800 ;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-info span{
+    font-family: "Poppins", sans-serif;
+    color: rgb(113, 113, 113);
+    font-size:14px ;
+    font-weight:400 ;
+    margin: 10px 0;
+}
+
+.about-info p{
+    font-family: "Poppins", sans-serif;
+    color: rgb(116, 129, 130);
+    font-size:15px ;
+    font-weight:400 ;
+    line-height: 24px;
+}
+
+
+.progress, .progress-stacked {
+    --bs-progress-bar-bg:var(--main-color);
+    --bs-progress-height: 1.3rem
+}
+
+.buttons .btn-1{
+    background-color: var(--main-color);
+    color: #fff;
+    transition: all .6s;
+    margin-right: 10px;
+}
+
+.buttons .btn-1:hover{
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.buttons .btn-2{
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: all .6s;
+}
+.buttons .btn-2:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+
+/* *********Services******** */
+
+
+
+
+  .card-services i {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: all 0.6s;
+    background-color:var(--second-color) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+} 
+
+.card-services:hover i{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+
+ .card-services p {
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    word-spacing: 2px;
+}
+
+ .card-services h6 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}  
+
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+
+/* *********Works******** */
+
+.work-nav{
+    width: fit-content;
+    margin: auto;
+}
+
+.work-nav li button{
+    font-size:16px ;
+    font-weight: 700;
+    color: #222
+    ;
+}
+
+.work-nav li button:hover{
+    color: #222;
+}
+
+
+.layer-port{
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.7s;
+}
+
+.content-port{
+    transform: translatey(300px);
+    transition: all 0.7s;
+}
+
+.port-img:hover .content-port{
+    transform: translate(0);
+}
+
+.port-img:hover .layer-port{
+    background-color: #FDFDFD;
+    z-index: 2;
+    border: 7px solid #D7D5D6;
+    
+}
+
+.content-port i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: all 0.7s;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.content-port i:hover{
+    background-color: #fff;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.content-port h6{
+    font-size: 17px;
+    font-weight:700 ;
+    font-family:"Montserrat", sans-serif;
+    color: var(--main-color);
+}
+/* *********Clients******** */
+
+.carousel-item img{
+    width: 120px;
+}
+
+.carousel-item p{
+    font-family:"Poppins", sans-serif ;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(116, 129, 130);
+    line-height: 24px;
+}
+
+.carousel-item span{
+    font-family:"Poppins", sans-serif ;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(136, 136, 136);
+}
+.carousel-item h6{
+    color: rgb(52, 52, 52);
+    font-size:16px ;
+    font-weight:600 ;
+    font-family: "Montserrat", sans-serif;
+}
+
+.carousel-indicators [data-bs-target] {
+    
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    
+    transition: opacity .6s ease;
+    margin-right: 10px;
+}
+
+
+
+    /*  numbers  */
+
+
+.numbers i{
+    color: var(--main-color);
+}
+
+.numbers h3{
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--main-color);
+    line-height: 33px;
+}
+
+.numbers p{
+    font-family: "Poppins", sans-serif;
+    color: rgb(116, 129, 130);
+    font-size:15px ;
+    font-weight:600 ;
+    line-height: 24px;
+    
+}
+
+
+
+/*  ------------------------- Team ------------- */
+
+
+
+
+
+.image-container {
+    position: relative;
+}
+.card-overlay {
+    position: absolute;
+    /* inset: 10px; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: rotateY(360deg);
+    transition: transform 1s, opacity 0.5s;
+}
+.image-container:hover .card-overlay {
+    opacity: 1;
+    transform: rotateY(0);
+    border: 8px solid #D7D5D6;
+}
+.icon-container {
+    display: flex;
+    
+    gap: 15px;
+}
+
+.image-container {
+    overflow: hidden;
+}
+.image-container img {
+    transition: transform 0.5s ease-in-out;
+}
+.image-container:hover img {
+    transform: scale(1.1); /* Adjust the scale as needed */
+}
+
+.card .icons i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s;
+}
+
+.card .icons i:hover{
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.card-body h5{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.card-body h6{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    font-family:"Montserrat", sans-serif;
+}
+
+
+
+/* contact */
+
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background-clip: padding-box;
+    background-color: #F4F4F4;
+    border: 0;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+ 
